@@ -1,21 +1,21 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
-  name: run
+  name: no-pvc
 spec:
+  serviceName: no-pvc
   replicas: 2
   selector:
     matchLabels:
-      app: run
+      app: no-pvc
   template:
     metadata:
       labels:
-        app: run
+        app: no-pvc
     spec:
       containers:
       - image: okteto/hello-world:golang
         name: c1
-        command: ["sasasas"]
         resources:
           requests:
             memory: "64Mi"
@@ -23,3 +23,7 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
+      volumes:
+        - name: no-pvc
+          persistentVolumeClaim:
+            claimName: no-pvc
