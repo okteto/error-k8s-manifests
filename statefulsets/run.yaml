@@ -3,7 +3,8 @@ kind: StatefulSet
 metadata:
   name: run
 spec:
-  replicas: 2
+  serviceName: run
+  replicas: 1
   selector:
     matchLabels:
       app: run

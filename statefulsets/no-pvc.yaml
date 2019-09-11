@@ -4,7 +4,7 @@ metadata:
   name: no-pvc
 spec:
   serviceName: no-pvc
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: no-pvc

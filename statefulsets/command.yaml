@@ -4,7 +4,7 @@ metadata:
   name: command
 spec:
   serviceName: command
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: command

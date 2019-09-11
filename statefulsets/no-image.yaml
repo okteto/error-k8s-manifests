@@ -4,7 +4,7 @@ metadata:
   name: no-image
 spec:
   serviceName: no-image
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: no-image

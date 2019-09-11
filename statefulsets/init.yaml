@@ -4,7 +4,7 @@ metadata:
   name: init
 spec:
   serviceName: init
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: init

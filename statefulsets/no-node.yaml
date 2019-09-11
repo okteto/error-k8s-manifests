@@ -4,7 +4,7 @@ metadata:
   name: no-node
 spec:
   serviceName: no-node
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: no-node

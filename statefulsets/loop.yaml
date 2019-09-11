@@ -4,7 +4,7 @@ metadata:
   name: loop
 spec:
   serviceName: loop
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: loop
